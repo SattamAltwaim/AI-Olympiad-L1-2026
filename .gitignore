@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------------------
+# Private material: never published. The slide sources, the course plan,
+# competition internals and Claude Code files stay on the machine (the builder
+# is its own private git repo).
+# ---------------------------------------------------------------------------
+/slides-builder/
+/private/
+/CLAUDE.md
+/CLAUDE.local.md
+/.claude/
+
+# Competition internals (datasets, keys, hidden test labels) never go in Comps/
+/Comps/**/data/
+/Comps/**/private/
+*.env
+.env
+
+# Jupyter / Python
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Datasets and model weights: labs download what they need at runtime
+*.zip
+*.tar
+*.tar.gz
+*.parquet
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# OS / editors
+.DS_Store
+__MACOSX/
+.vscode/
+.idea/
+
+# Working notes for whoever produces the material (not student-facing)
+/Labs/README.md
+/Comps/README.md
+
+# Scaffold smoke tests (renamed TEST_*): never published, deleted once the real day exists
+**/TEST_*
+**/test-*/
